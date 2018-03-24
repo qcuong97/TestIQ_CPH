@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html style="position:center;">
+<head>
+    <meta name="viewport" content="width=device-width, initical-scale=1" />
+    <title>@ViewBag.Title</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Test IQ-EQ</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link href="~/Content/testIQ.css" rel="stylesheet" />
+</head>
+<body>
+<div class="container">
+    <div class="col-md-3"style="width:175px">
+        <div class="logo">
+            <img src="~/HinhIQ/logo1.png" />
+        </div>
+    </div>
+    <div class="col-md-9 col-lg-9 col-xs-9 col-sm-9" style="margin-left:5px">
+        <img class="header" src="~/HinhIQ/IQvsEQ.png" />
+    </div>
+</div>
+<!-- Page Content -->
+<div class="container" style="padding-top:10px">
+    <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3" style="width:225px;">
+        <div class="list-group">
+            <b style="font-size:14px">
+                <a href="/TestIQ/Index"
+                   class="list-group-item"><span class="glyphicon glyphicon-home"></span>Trang Chủ</a>
+                <a href="#"
+                   class="list-group-item"><span class="glyphicon glyphicon-star"></span>Test IQ</a>
+                <a href="#"
+                   class="list-group-item"><span class="glyphicon glyphicon-heart"></span>Test EQ</a>
+                <a href="#"
+                   class="list-group-item"><span class="glyphicon glyphicon-ok"></span>Test IQ Tuyển Dụng</a>
+                <a href="#"
+                   class="list-group-item"><span class="glyphicon glyphicon-eye-open"></span>Test Tính Cách</a>
+                <a href="/TestIQ/IQNguoinoitieng"
+                   class="list-group-item"><span class="glyphicon glyphicon-user"></span>IQ Các Thiên Tài</a>
+                <a href="#"
+                   class="list-group-item"><span class="glyphicon glyphicon-question-sign"></span>IQ là Gì?</a>
+                <a href="#"
+                   class="list-group-item"><span class="glyphicon glyphicon-question-sign"></span>EQ là Gì?</a>
+            </b>
+        </div>
+    </div>
+    <div class=" col-md-9 col-lg-9 col-xs-9 col-sm-9">
+        <div style="margin-left:5px">
+            @RenderBody()
+        </div>
+    </div>
+    <!-- /.container -->
+    <div class="container">
+        <hr>
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <p>Copyright &copy; TrQC - 2015</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+<!-- /.container -->
+<!-- jQuery -->
+<script src="~/Scripts/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="~/Scripts/bootstrap.min.js"></script>
+</body>
+</html>
